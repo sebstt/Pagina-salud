@@ -1,0 +1,48 @@
+
+body.error-page {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #D32F2F, #feb47b);
+    color: #fff;
+    text-align: center;
+}
+
+.error-container {
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.error-code {
+    font-size: 10rem;
+    margin: 0;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.error-message {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.Botonvolver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    background: #ff6f61;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.Botonvolver:hover {
+    background: #ff8e7f;
+}

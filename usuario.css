@@ -1,0 +1,140 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+
+header .menu {
+    background-color: #D32F2F;
+    padding: 25px 0;
+}
+
+header .contenedor nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header .contenedor nav ul li {
+    margin: 0 15px;
+}
+
+header .contenedor nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .contenedor nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+#perfil-usuario img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #ff6b6b;
+    transition: transform 0.3s ease-in-out;
+}
+
+#perfil-usuario img:hover {
+    transform: scale(1.1);
+}
+
+#perfil-usuario button {
+    margin-top: 10px;
+}
+
+
+#estadisticas ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+}
+
+#estadisticas ul li {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#estadisticas ul li span {
+    font-weight: bold;
+    color: #333;
+}
+
+
+#ajustes {
+    margin-top: 30px;
+}
+
+#ajustes form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#ajustes form .form-group {
+    margin-bottom: 15px;
+}
+
+#ajustes form label {
+    font-weight: bold;
+}
+
+#ajustes form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#ajustes form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#ajustes form button:hover {
+    background-color: #218838;
+}
+
+
+@media (max-width: 768px) {
+    header .contenedor nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #perfil-usuario img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #estadisticas ul li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #ajustes form button {
+        width: auto;
+    }
+}

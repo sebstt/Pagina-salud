@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Salud</title>
+    <link rel="stylesheet" href="formulario.css">
+</header>
+<body>
+    <div class="form-container">
+        <h2>Formulario de Salud</h2>
+        <form id="health-form">
+            <label for="nombre">*Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">*Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="edad">*Edad:</label>
+            <input type="number" id="edad" name="edad" min="0" required>
+
+            <label for="correo">*Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="tipo-rh">*Tipo RH:</label>
+            <select id="tipo-rh" name="tipo-rh" required>
+                <option value="" disabled selected>Selecciona tu tipo RH</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+
+            <label for="posee-enfermedad">*¿Posees alguna enfermedad?</label>
+            <div>
+                <label>
+                    <input type="radio" name="posee-enfermedad" value="si" id="enfermedad-si"> Sí
+                </label>
+                <label>
+                    <input type="radio" name="posee-enfermedad" value="no" id="enfermedad-no"> No
+                </label>
+            </div>
+
+            <div id="enfermedades-lista" class="hidden">
+                <label for="enfermedad">¿Qué enfermedad tienes?</label>
+                <select id="enfermedad" name="enfermedad">
+                    <option value="" disabled selected>Selecciona una enfermedad</option>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="obesidad">Obesidad</option>
+                    <option value="hipertension">Hipertensión</option>
+                    <option value="ets">ETS</option>
+                </select>
+            </div>
+
+            <label for="numero-contacto">*Número de contacto:</label>
+            <input type="tel" id="numero-contacto" name="numero-contacto" pattern="[0-9]{10}" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="formulario.js"></script>
+</body>
+</html>
