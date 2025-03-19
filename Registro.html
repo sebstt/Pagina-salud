@@ -5,13 +5,14 @@
         <h3>Regístrese ahora y obtenga acceso completo a nuestra aplicación.</h3>
         <div class="cuadro-registro">
             <h4>Registrarse</h4>
-                <form action="#" method="post"  id="registrar">
-                <input type="text" id="Nombre" name="Nombre" required placeholder="Nombre">
-                <input type="text" id="Apellido" name="Apellido" required placeholder="Apellido">
-                <input type="text" id="Correoelectronico" name="Correoelectronico" required placeholder="Correo electrónico">
-                <input type="text" id="Contraseña" name="Contraseña" required placeholder="Contraseña">
-                <input type="text" id="Confirmarcontraseña" name="Confirmarcontraseña" required placeholder="Confirmar contraseña">
-            </form>
+<form action="registro.php" method="post">
+    <input type="text" id="Nombre" name="Nombre" required placeholder="Nombre">
+    <input type="text" id="Apellido" name="Apellido" required placeholder="Apellido">
+    <input type="email" id="Correoelectronico" name="Correoelectronico" required placeholder="Correo electrónico">
+    <input type="password" id="Clave" name="Clave" required placeholder="Clave">
+    <input type="password" id="Confirmarclave" name="Confirmarclave" required placeholder="Confirmar clave">
+    <button type="submit" id="Botonregis">Crear cuenta e iniciar sesión</button>
+</form>
             <button type="submit" id="Botonregis" onclick="window.location.href='Ingreso.html';">Crear cuenta e iniciar sesión </button>
             <p><a href="index.html">Volver a la página principal</a></p>
         </div>
